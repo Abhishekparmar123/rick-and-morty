@@ -53,7 +53,7 @@ export default function CharacterList() {
         }
       }
     `
-    const client = new GraphQLClient(url)
+    const client = new GraphQLClient(url, { method: "POST"})
     client
       .request(query, params)
       .then((res) => {
