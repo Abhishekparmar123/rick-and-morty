@@ -21,7 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
     actions.createPage({
       component: path.resolve("./src/templates/character-details.js"),
       context: { id: i },
-      path: "/" + "detail-" + i,
+      path: "/" + i,
     })
   }
 }

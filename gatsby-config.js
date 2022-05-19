@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  flags: {
+    PARALLEL_QUERY_RUNNING: true
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
