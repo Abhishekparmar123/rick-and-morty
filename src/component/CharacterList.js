@@ -38,6 +38,7 @@ export default function CharacterList() {
         ) {
           results {
             name
+            created
             image
             status
             gender
@@ -53,7 +54,7 @@ export default function CharacterList() {
         }
       }
     `
-    const client = new GraphQLClient(url, { method: "POST"})
+    const client = new GraphQLClient(url)
     client
       .request(query, params)
       .then((res) => {

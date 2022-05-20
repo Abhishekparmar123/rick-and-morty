@@ -4,7 +4,7 @@ import DateTime from './dateTime'
 
 function Character(props) {
   const {id, name, image, status, species, gender, created, location} = props.result
-  
+  console.log(created)
   return (
     <Link to={"/" + id}>
       <div className="card is-flex has-background-grey-darker" style={{borderRadius:20}}>
